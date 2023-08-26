@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardCollectionViewCell" customModule="onboardintest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="855"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="855"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="backgorund" translatesAutoresizingMaskIntoConstraints="NO" id="ZKT-7D-zwF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="855"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI Trained With 360.000 Photos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF2-uG-g6x">
+                        <rect key="frame" x="53" y="490" width="287" height="93"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="93" id="xN4-LM-Jt6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector 1" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-CF-z47">
+                        <rect key="frame" x="70" y="586" width="253" height="17"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Trained with 360,000 photos, AI scores your photos based on multiple factors." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWP-ZC-odt">
+                        <rect key="frame" x="36" y="617" width="320" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="gmQ-9v-1N4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.39344175170000001" alpha="0.86581643210000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="HWP-ZC-odt" firstAttribute="centerX" secondItem="wF2-uG-g6x" secondAttribute="centerX" id="0e6-ib-lzK"/>
+                <constraint firstAttribute="bottom" secondItem="ZKT-7D-zwF" secondAttribute="bottom" id="39P-JG-N1g"/>
+                <constraint firstItem="ZKT-7D-zwF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Lj-dR-QWg"/>
+                <constraint firstAttribute="trailing" secondItem="YLe-CF-z47" secondAttribute="trailing" constant="70" id="7q3-XY-2BC"/>
+                <constraint firstItem="YLe-CF-z47" firstAttribute="top" secondItem="wF2-uG-g6x" secondAttribute="bottom" constant="3" id="C0E-i4-uyY"/>
+                <constraint firstAttribute="trailing" secondItem="ZKT-7D-zwF" secondAttribute="trailing" id="LP1-t2-hPA"/>
+                <constraint firstItem="YLe-CF-z47" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="70" id="MDW-sZ-Ucp"/>
+                <constraint firstItem="HWP-ZC-odt" firstAttribute="centerX" secondItem="YLe-CF-z47" secondAttribute="centerX" id="N76-TP-sSd"/>
+                <constraint firstItem="ZKT-7D-zwF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SpV-qT-XLC"/>
+                <constraint firstItem="HWP-ZC-odt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="36" id="Tcc-59-2fx"/>
+                <constraint firstItem="wF2-uG-g6x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="53" id="UtH-49-n0w"/>
+                <constraint firstItem="YLe-CF-z47" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="586" id="eiP-OH-TAf"/>
+                <constraint firstItem="HWP-ZC-odt" firstAttribute="top" secondItem="YLe-CF-z47" secondAttribute="bottom" constant="14" id="emB-0u-Bdq"/>
+            </constraints>
+            <size key="customSize" width="228" height="204"/>
+            <connections>
+                <outlet property="background" destination="ZKT-7D-zwF" id="q3j-AH-pA4"/>
+                <outlet property="descrip" destination="HWP-ZC-odt" id="UjQ-Gw-DP4"/>
+                <outlet property="line" destination="YLe-CF-z47" id="Ooj-yG-raO"/>
+                <outlet property="title" destination="wF2-uG-g6x" id="rMf-EK-2mz"/>
+            </connections>
+            <point key="canvasLocation" x="182.44274809160305" y="74.647887323943664"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Vector 1" width="252.66667175292969" height="16.666666030883789"/>
+        <image name="backgorund" width="375" height="812"/>
+    </resources>
+</document>
